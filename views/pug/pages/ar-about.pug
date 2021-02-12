@@ -1,0 +1,164 @@
+extends ar-index.pug
+block changeTitle
+    - selected = "About"
+block body
+  include ../components/ar-pageTitle.pug
+  // Start Designing The About Information Section
+  section(class="about-info")
+    div(class="container")
+      div(class="about-boxs")
+        div(class="about-boxs-image")
+          div(class="about-boxs-image-text")
+            h3 معلومات شخصية
+          div(class="about-boxs-image-image")
+            img(src="../content/assets/images/mypicsmall.jpg" alt="mina's small picture")
+        div(class="about-left-boxs")
+          div(class="about-left-box")
+            p الأسم الأول : #[span مينا]
+            p الأسم الأخير : #[span كرم]
+            p العمر : #[span 28 سنه]
+            p الجنسية : #[span مصر]
+            p العمل الحر : #[span متاح]
+            a(href="https://drive.google.com/file/d/1iRl_GymddshxP07fSV4NrSDBw4LvXuZn/view?usp=sharing" target="_blank")
+              span تحميل السيرة الذاتية
+              i(class="fas fa-download")
+          div(class="about-left-box")
+            p العنوان : #[span عين شمس، القاهرة]
+            p الموبايل : #[span 01201291138]
+            p البريد : #[span minakaram13@gmail.com]
+            p اللغات : #[span العربية، الانجليزية]
+        div(class="about-right-boxs")
+          div(class="about-right-box")
+            h3 1 #[span +]
+            div(class="about-right-box-texts")
+              div(class="about-right-box-text")
+                span &mdash;
+              div(class="about-right-box-text")
+                span سنوات الخبرة
+          div(class="about-right-box")
+            h3 7 #[span +]
+            div(class="about-right-box-texts")
+              div(class="about-right-box-text")
+                span &mdash;
+              div(class="about-right-box-text")
+                span المشاريع المكتملة
+          div(class="about-right-box")
+            h3 3 #[span +]
+            div(class="about-right-box-texts")
+              div(class="about-right-box-text")
+                span &mdash;
+              div(class="about-right-box-text")
+                span العملاء السعيدة
+          div(class="about-right-box")
+            h3 0 #[span +]
+            div(class="about-right-box-texts")
+              div(class="about-right-box-text")
+                span &mdash;
+              div(class="about-right-box-text")
+                span الجوائز
+  // Finish Designing The About Information Section
+  
+  // Start Designing The Skills Section
+  section(class="skills")
+    div(class="container")
+      div(class="section-line")
+      h3(class="section-title") مهاراتي
+      div(class="skills-boxs")
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="90")
+          div(class="skills-box-description")
+            span html5
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="90")
+          div(class="skills-box-description")
+            span css3
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="80")
+          div(class="skills-box-description")
+            span sass
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="70")
+          div(class="skills-box-description")
+            span pugjs
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="75")
+          div(class="skills-box-description")
+            span javascript
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="80")
+          div(class="skills-box-description")
+            span jquery
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="75")
+          div(class="skills-box-description")
+            span bootstrab
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="60")
+          div(class="skills-box-description")
+            span gulpjs
+  // Finish Designing The Skills Section
+  // Start Designing The Experience and Education Section
+  section(class="experience-and-education")
+    div(class="container")
+      div(class="section-line")
+      h3(class="section-title") الخبرات و التعليم 
+      div(class="experience-and-education-boxs")
+        div(class="experience-and-education-boxs-boxs")
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-briefcase")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2021
+              h4 تدريب على الأنترنت
+              p ايراسوفت
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-briefcase")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2018 - المستقبل
+              h4 معيد
+              p معهد القاهرة العالى بالمقطم
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-briefcase")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2020
+              h4 دورة تصميم الويب
+              p التراس حاسبات ومعلومات
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-briefcase")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2019 - 2020
+              h4 دورة علوم البيانات
+              p معهد محترفي الإدارة
+        div(class="experience-and-education-boxs-boxs")
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-graduation-cap")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2018 - المستقبل
+              h4 تمهيدي الماجستير #[span &ndash; جامعة حلوان]
+              p تمهيدي الماجستير فى نظم معلومات الأعمال بتقدير جيد جدا يونيو 2019
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-graduation-cap")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2017
+              h4 دبلوم #[span &ndash; جامعة حلوان]
+              p  دبلوم فى نظم معلومات الأعمال بتقدير امتياز يونيو 2018
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-graduation-cap")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2013
+              h4 بكالوريوس #[span &ndash; أكاديمية المستقبل]
+              p بكالوريوس فى نظم المعلومات الادارية بتقدير ممتاز يونيو 2017        
+  // Finish Designing The Experience and Education Section

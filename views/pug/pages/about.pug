@@ -1,0 +1,164 @@
+extends index.pug
+block changeTitle
+    - selected = "About"
+block body
+  include ../components/pageTitle.pug
+  // Start Designing The About Information Section
+  section(class="about-info")
+    div(class="container")
+      div(class="about-boxs")
+        div(class="about-boxs-image")
+          div(class="about-boxs-image-text")
+            h3 personal infos
+          div(class="about-boxs-image-image")
+            img(src="../content/assets/images/mypicsmall.jpg" alt="mina's small picture")
+        div(class="about-left-boxs")
+          div(class="about-left-box")
+            p First Name : #[span Mina]
+            p Last Name : #[span Karam]
+            p Age : #[span 28 Years]
+            p Nationality : #[span Egyption]
+            p Freelance : #[span Available]
+            a(href="https://drive.google.com/file/d/1iRl_GymddshxP07fSV4NrSDBw4LvXuZn/view?usp=sharing" target="_blank")
+              span Download CV
+              i(class="fas fa-download")
+          div(class="about-left-box")
+            p Address : #[span Ain Shams, Cairo]
+            p Phone : #[span 01201291138]
+            p Email : #[span minakaram13@gmail.com]
+            p languages : #[span Arabic, English]
+        div(class="about-right-boxs")
+          div(class="about-right-box")
+            h3 1 #[span +]
+            div(class="about-right-box-texts")
+              div(class="about-right-box-text")
+                span &mdash;
+              div(class="about-right-box-text")
+                span Years of experience
+          div(class="about-right-box")
+            h3 7 #[span +]
+            div(class="about-right-box-texts")
+              div(class="about-right-box-text")
+                span &mdash;
+              div(class="about-right-box-text")
+                span completed projects
+          div(class="about-right-box")
+            h3 3 #[span +]
+            div(class="about-right-box-texts")
+              div(class="about-right-box-text")
+                span &mdash;
+              div(class="about-right-box-text")
+                span Happy customers
+          div(class="about-right-box")
+            h3 0 #[span +]
+            div(class="about-right-box-texts")
+              div(class="about-right-box-text")
+                span &mdash;
+              div(class="about-right-box-text")
+                span Awards won
+  // Finish Designing The About Information Section
+  
+  // Start Designing The Skills Section
+  section(class="skills")
+    div(class="container")
+      div(class="section-line")
+      h3(class="section-title") my skills
+      div(class="skills-boxs")
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="90")
+          div(class="skills-box-description")
+            span html5
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="90")
+          div(class="skills-box-description")
+            span css3
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="80")
+          div(class="skills-box-description")
+            span sass
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="70")
+          div(class="skills-box-description")
+            span pugjs
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="75")
+          div(class="skills-box-description")
+            span javascript
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="80")
+          div(class="skills-box-description")
+            span jquery
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="75")
+          div(class="skills-box-description")
+            span bootstrab
+        div(class="skills-box")
+          div(class="circlechart" data-percentage="60")
+          div(class="skills-box-description")
+            span gulpjs
+  // Finish Designing The Skills Section
+  // Start Designing The Experience and Education Section
+  section(class="experience-and-education")
+    div(class="container")
+      div(class="section-line")
+      h3(class="section-title") Experience &amp; Education 
+      div(class="experience-and-education-boxs")
+        div(class="experience-and-education-boxs-boxs")
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-briefcase")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2021
+              h4 Online Training
+              p EraaSoft
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-briefcase")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2018 - Present
+              h4 Teaching Assistant
+              p Cairo Higher Institute of Mokattam Academy
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-briefcase")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2020
+              h4 Web Design Course
+              p Ultras FCI
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-briefcase")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2019 - 2020
+              h4 Data Science Course
+              p IMP
+        div(class="experience-and-education-boxs-boxs")
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-graduation-cap")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2018 - Present
+              h4 Master Degree #[span &ndash; Helwan University]
+              p Premaster Degree in Business Information System Very Good Grade June 2019
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-graduation-cap")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2017
+              h4 Diploma Degree #[span &ndash; Helwan University]
+              p Diploma Degree in Business Information System Excellent Grade June 2018
+          div(class="experience-and-education-boxs-box")
+            div(class="experience-and-education-boxs-box-icon")
+              i(class="fas fa-graduation-cap")
+            div(class="experience-and-education-boxs-box-text")
+              div(class="experience-and-education-boxs-box-text-year")
+                span 2013
+              h4 Bachelor Degree #[span &ndash; Future Academy]
+              p Bachelor Degree in Management Information System Excellent Grade June 2017        
+  // Finish Designing The Experience and Education Section

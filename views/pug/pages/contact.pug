@@ -1,0 +1,38 @@
+extends index.pug
+block changeTitle
+    - selected = "Contact"
+block body
+  include ../components/pageTitle.pug
+  // Start Designing The Contact Information Section
+  section(class="contact-info")
+    div(class="container")
+      div(class="contact-boxs")
+        div(class="contact-left-box")
+          div(class="contact-left-box-text")
+            h3 Don't be shy !
+            p Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+          div(class="contact-left-box-icons")
+            div(class="contact-left-box-icon")
+              div(class="contact-left-box-icon-icon")
+                i(class="fas fa-envelope-open")
+              div(class="contact-left-box-icon-text")
+                h4 minakaram13@gmail.com
+            div(class="contact-left-box-icon")
+              div(class="contact-left-box-icon-icon")
+                i(class="fas fa-phone-square-alt")
+              div(class="contact-left-box-icon-text")
+                h4 01201291138
+        div(class="contact-right-box")
+          div(class="contact-right-box-form")
+            form(action="#")
+              input(type="text" dir="auto" placeholder="your name")
+              input(type="text" dir="auto" placeholder="your mail")
+              input(type="text" dir="auto" placeholder="your subject")
+              textarea(dir="auto" placeholder="your message")
+              button(class="button")
+                span Send Message
+                i(class="fas fa-paper-plane")
+          div(class="contact-right-box-message")
+            i(class="fas fa-check-square")
+            span Message Sent!
+  // Finish Designing The Contact Information Section

@@ -1,0 +1,17 @@
+nav
+  ul
+    - for(var i = 0; i < myActive.length; i++)
+      if(myActive[i].name === selected)
+        #{myActive[i].list}
+          a(class="active" href=myActive[i].link)
+            span #{myActive[i].span}
+            i(class=myActive[i].svg)
+      else
+        #{myActive[i].list}
+          a(href=myActive[i].link)
+            span #{myActive[i].span}
+            i(class=myActive[i].svg)
+div(class="mobile-btn")
+  div(class="line")
+  div(class="line")
+  div(class="line")

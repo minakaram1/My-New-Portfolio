@@ -1,0 +1,225 @@
+:root {
+  --main-color: #72b626;
+}
+
+header .top-bar nav ul {
+  right: -100%;
+  left: auto;
+}
+
+header .top-bar nav ul.show-nav {
+  right: 0;
+  left: auto;
+}
+
+@media (min-width: 992px) {
+  header .top-bar nav ul li a:hover span {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .top-bar nav ul {
+    right: auto;
+    left: 2%;
+  }
+}
+
+header .top-bar .mobile-btn {
+  left: 5%;
+  right: auto;
+}
+
+header .color-setting {
+  left: auto;
+  right: -244px;
+}
+
+header .color-setting.show-color-setting {
+  right: 0;
+  left: auto;
+}
+
+header .color-setting .color-setting-content .color-setting-dark-colors .color-setting-dark-color:nth-of-type(2) {
+  padding: 3px 2px 2px 27px;
+}
+
+header .color-setting .color-setting-content .color-setting-dark-colors .color-setting-dark-color:nth-of-type(2).dark-mode {
+  padding: 3px 27px 2px 2px;
+}
+
+header .color-setting .color-setting-content .color-setting-language-colors .color-setting-language-color {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+header .color-setting .color-setting-content .color-setting-language-colors .color-setting-language-color a span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+header .color-setting .color-setting-content .color-setting-language-colors .color-setting-language-color:first-of-type {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+header .color-setting .color-setting-content .color-setting-language-colors .color-setting-language-color .disable-language span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+header .color-setting .color-setting-icon {
+  -webkit-box-shadow: -4px 0px 4px 0px rgba(51, 51, 51, 0.2);
+          box-shadow: -4px 0px 4px 0px rgba(51, 51, 51, 0.2);
+  border-radius: 5px 0 0 5px;
+}
+
+@media (min-width: 992px) {
+  .banner .banner-background {
+    -webkit-transform: rotate(-75deg) translateY(100%);
+            transform: rotate(-75deg) translateY(100%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner .banner-background {
+    -webkit-transform: rotate(-75deg) translateY(113%);
+            transform: rotate(-75deg) translateY(113%);
+  }
+}
+
+@media (min-width: 992px) {
+  .banner .banner-box .banner-box-image {
+    margin: 30px 30px 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner .banner-box .banner-box-text h2 {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner .banner-box .banner-box-text p {
+    padding: 0 0 0 100px;
+    text-align: right;
+  }
+}
+
+.banner .banner-box .banner-box-text .banner-box-text-link a svg {
+  margin-right: -15px;
+  margin-left: 0;
+}
+
+.banner .banner-box .banner-box-text .banner-box-text-link a:hover svg {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/* Start Style the About Page*/
+/* Start Style the About Information Section*/
+.about-info .about-boxs .about-left-boxs .about-left-box a:hover svg {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.about-info .about-boxs .about-left-boxs .about-left-box a svg {
+  margin-right: -15px;
+  margin-left: 0;
+}
+
+.about-info .about-boxs .about-right-boxs .about-right-box .about-right-box-texts .about-right-box-text:first-of-type {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* Finish Style the About Information Section*/
+/* Start Style the Experience and Education Section*/
+.experience-and-education .experience-and-education-boxs .experience-and-education-boxs-boxs .experience-and-education-boxs-box .experience-and-education-boxs-box-icon::after {
+  right: 20px;
+  left: auto;
+}
+
+/* Finish Style the Experience and Education Section*/
+/* Finish Style the About Page*/
+/* Start Style the Contact Page*/
+/* Start Style the Contact Information Section*/
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icons .contact-left-box-icon .contact-left-box-icon-icon {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.contact-info .contact-boxs .contact-right-box form input::-webkit-input-placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form input::-moz-placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form input:-ms-input-placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form input::-ms-input-placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form input::placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form input:last-of-type {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contact-info .contact-boxs .contact-right-box form input {
+    margin: 0 0 0 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-info .contact-boxs .contact-right-box form input {
+    margin: 0 0 0 2%;
+  }
+}
+
+.contact-info .contact-boxs .contact-right-box form textarea::-webkit-input-placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form textarea::-moz-placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form textarea:-ms-input-placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form textarea::-ms-input-placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form textarea::placeholder {
+  text-align: right;
+}
+
+.contact-info .contact-boxs .contact-right-box form button:hover svg {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.contact-info .contact-boxs .contact-right-box form button svg {
+  margin-left: 0;
+  margin-right: -15px;
+}
+
+/* Finish Style the Contact Information Section*/
+/* Finish Style the Contact Page*/
+
+/*# sourceMappingURL=rtl-direction.css.map */

@@ -1,0 +1,40 @@
+div(class="color-setting")
+  div(class="color-setting-content")
+    div(class="color-setting-text")
+      h3 تغيير الألوان
+      i(class="fas fa-times")
+    div(class="color-setting-colors")
+      div(class="color-setting-color active" title='green')
+      div(class="color-setting-color" title='red')
+      div(class="color-setting-color" title='blueviolet')
+      div(class="color-setting-color" title='blue')
+      div(class="color-setting-color" title='goldenrod')
+      div(class="color-setting-color" title='magenta')
+      div(class="color-setting-color" title='yellowgreen')
+      div(class="color-setting-color" title='orange')
+      div(class="color-setting-color" title='purple')
+      div(class="color-setting-color" title='yellow')
+    div(class="color-setting-dark-text")
+      h3 تغيير الشكل
+    div(class="color-setting-dark-colors")
+      div(class="color-setting-dark-color")
+        a(class="light-mode" href="#") فاتح
+      div(class="color-setting-dark-color")
+        i(class="fas fa-circle")
+      div(class="color-setting-dark-color")
+        a(class="dark-mode" href="#") مظلم
+    div(class="color-setting-language-text")
+      h3 اللغة
+    div(class="color-setting-language-colors")
+      div(class="color-setting-language-color")
+        - for(var i = 0; i < myEnglishLinks.length; i++)
+          if(myEnglishLinks[i].name === selected)
+            a(class="english-lang" href=myEnglishLinks[i].link) 
+              img(src="../content/assets/images/usa-flag.png" alt="USA Flag")
+              span english
+      div(class="color-setting-language-color")
+        div(class="disable-language")
+          img(src="../content/assets/images/egypt-flag.png" alt="USA Flag")
+          span عربي
+  div(class="color-setting-icon")
+    i(class="fas fa-cog fa-spin")

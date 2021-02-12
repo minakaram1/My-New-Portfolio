@@ -1,0 +1,381 @@
+/* Start Style the About Page*/
+/* Start Style the About Information Section*/
+.about-info {
+  .about-boxs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-boxs-image {
+      width: 100%;
+      margin-top: 80px;
+
+      .about-boxs-image-text {
+        h3 {
+          text-transform: uppercase;
+          margin-top: 20px;
+          font-size: 20px;
+          color: $dim-grey-color;
+
+          @media (min-width: 576px) {
+            font-size: 26px;
+          }
+        }
+      }
+
+      .about-boxs-image-image {
+        width: 230px;
+        height: 230px;
+        margin: 30px auto;
+
+        img {
+          width: 100%;
+          border-radius: 50%;
+
+        }
+
+        @media (min-width: 576px) {
+          display: none;
+        }
+      }
+
+      @media (min-width: 576px) {
+        margin: 30px 3.25% 20px;
+      }
+
+      @media (min-width: 1200px) {
+        margin: 30px 2% 20px;
+      }
+    }
+
+    .about-left-boxs {
+      display: flex;
+      align-items: flex-start;
+      flex-basis: 100%;
+      justify-content: space-around;
+      position: relative;
+      padding-bottom: 60px;
+
+      .about-left-box {
+        flex-basis: 40%;
+        margin-bottom: 20px;
+
+        &:first-of-type {
+          @media (min-width: 992px) {
+            flex-basis: 42%;
+          }
+        }
+
+        &:last-of-type {
+          @media (min-width: 576px) {
+            flex-basis: 47%;
+          }
+
+          @media (min-width: 992px) {
+            flex-basis: 55%;
+          }
+        }
+
+        p {
+          margin-bottom: 20px;
+          font-size: 14px;
+          color: $nobel-color;
+
+          span {
+            margin-top: 5px;
+            font-weight: bold;
+            display: block;
+            color: $dim-grey-color;
+
+            @media (min-width: 576px) {
+              display: inline-block;
+            }
+          }
+
+          @media (min-width: 576px) {
+            font-size: 15px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          position: absolute;
+          bottom: 30px;
+          padding: 15px;
+          line-height: 1em;
+          border-radius: 25px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $white-color;
+          background-color: var(--main-color);
+
+          &:hover {
+            svg {
+              margin-left: 10px;
+              opacity: 1;
+            }
+          }
+
+          span {
+            font-size: 16px;
+          }
+
+          svg {
+            margin-left: -15px;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+          }
+
+          @media (min-width: 576px) {
+            position: static;
+            line-height: 4em;
+          }
+        }
+      }
+
+      @media (min-width: 576px) {
+        padding-bottom: 0;
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 47%;
+        margin-left: 20px;
+      }
+
+      @media (min-width: 1200px) {
+        margin-left: 0;
+      }
+    }
+
+    .about-right-boxs {
+      display: flex;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .about-right-box {
+        flex-basis: 90%;
+        padding: 20px 30px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 1px solid $gainsboro-color;
+
+        h3 {
+          font-size: 50px;
+          font-weight: 900;
+          color: var(--main-color);
+
+          span {
+            font-size: 33px;
+            font-weight: normal;
+            vertical-align: 37%;
+          }
+        }
+
+        .about-right-box-texts {
+          display: flex;
+
+          .about-right-box-text {
+            &:first-of-type {
+              margin-right: 20px;
+              color: $grey-color;
+            }
+
+            &:last-of-type {
+              color: $dim-grey-color;
+            }
+
+            span {
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        @media (min-width: 576px) {
+          flex-basis: 45%;
+        }
+
+        @media (min-width: 768px) {
+          flex-basis: 40%;
+        }
+
+        @media (min-width: 992px) {
+          flex-basis: 47%;
+          padding: 20px;
+        }
+      }
+
+      @media (min-width: 576px) {
+        margin-top: 20px;
+        justify-content: space-between;
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 44%;
+        margin-top: 0;
+      }
+
+      @media (min-width: 1200px) {
+        flex-basis: 47%;
+        margin-bottom: 30px;
+        padding: 20px 30px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      justify-content: space-around;
+      width: 96%;
+    }
+  }
+}
+
+/* Finish Style the About Information Section*/
+/* Start Style the Skills Section*/
+.skills {
+  .skills-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .skills-box {
+      flex-basis: 55%;
+      position: relative;
+
+      .circlechart {
+        width: fit-content;
+        margin: auto;
+      }
+
+      .danger-stroke {
+        stroke: var(--main-color);
+      }
+
+      .warning-stroke {
+        stroke: var(--main-color);
+      }
+
+      .success-stroke {
+        stroke: var(--main-color);
+      }
+
+      .skills-box-description {
+        margin: 20px auto 50px;
+        width: 120px;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+          color: $dim-grey-color;
+        }
+      }
+
+      @media (min-width: 576px) {
+        flex-basis: 50%;
+      }
+
+      @media (min-width: 768px) {
+        flex-basis: 22%;
+      }
+    }
+
+    @media (min-width: 576px) {
+      justify-content: space-between;
+    }
+
+    @media (min-width: 992px) {
+      width: 90%;
+      margin: auto;
+    }
+
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+      margin: 0;
+    }
+  }
+}
+
+/* Finish Style the Skills Section*/
+/* Start Style the Experience and Education Section*/
+.experience-and-education {
+  .experience-and-education-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    .experience-and-education-boxs-boxs {
+      flex-basis: 90%;
+      margin: auto;
+
+      .experience-and-education-boxs-box {
+        display: flex;
+        margin-bottom: 50px;
+        position: relative;
+
+        .experience-and-education-boxs-box-icon {
+          border-radius: 50%;
+          height: 40px;
+          min-width: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $white-color;
+          background-color: var(--main-color);
+
+          &::after {
+            content: "";
+            height: 70%;
+            width: 1px;
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            background-color: $gainsboro-color;
+          }
+        }
+
+        .experience-and-education-boxs-box-text {
+          padding: 0 10px;
+
+          .experience-and-education-boxs-box-text-year {
+            width: fit-content;
+            padding: 5px 10px;
+
+            font: {
+              size: 13px;
+              weight: 700;
+            }
+
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            background-color: $white-smoke-color;
+            color: $dim-grey-color;
+          }
+
+          h4 {
+            margin-bottom: 20px;
+            color: $dim-grey-color;
+
+            span {
+              color: $grey-color;
+            }
+          }
+        }
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 45%;
+        margin: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
+/* Finish Style the Experience and Education Section*/
+/* Finish Style the About Page*/

@@ -1,0 +1,52 @@
+extends index.pug
+block changeTitle
+  - selected = "Portfolio"
+block body
+  include ../components/pageTitle.pug
+  // Start Designing The Portfolio Title Section
+  section(class="portfolio-info")
+    div(class="container")
+      div(class="portfolio-boxs")
+        div(class="portfolio-box")
+          div(class="portfolio-box-text")
+            a(href="https://minakaram1.github.io/Rapid-Template/dist/index.html" target="_blank")
+              span Rapid Template
+          div(class="portfolio-box-image")
+            img(src="../content/assets/images/rapid.jpg" alt="Rapid Template Image")
+        div(class="portfolio-box")
+          div(class="portfolio-box-text")
+            a(href="https://minakaram1.github.io/Buddy-Theme/dist/" target="_blank")
+              span Buddy Theme
+          div(class="portfolio-box-image")
+            img(src="../content/assets/images/buddy.jpg" alt="Buddy Theme Image")
+        div(class="portfolio-box")
+          div(class="portfolio-box-text")
+            a(href="https://minakaram1.github.io/Jumia-Resposive-Template/" target="_blank")
+              span Jumia Template
+          div(class="portfolio-box-image")
+            img(src="../content/assets/images/jumia.jpg" alt="Jumia Template Image")
+        div(class="portfolio-box")
+          div(class="portfolio-box-text")
+            a(href="https://minakaram1.github.io/Ain---Portfolio-HTML5-Template/dist/" target="_blank")
+              span Ain Portfolio Template
+          div(class="portfolio-box-image")
+            img(src="../content/assets/images/ain.jpg" alt="Ain Portfolio Template Image")
+        div(class="portfolio-box")
+          div(class="portfolio-box-text")
+            a(href="https://minakaram1.github.io/Digitized/" target="_blank")
+              span Digitized Template
+          div(class="portfolio-box-image")
+            img(src="../content/assets/images/digitized.jpg" alt="Digitized Template Image")
+        div(class="portfolio-box")
+          div(class="portfolio-box-text")
+            a(href="https://minakaram1.github.io/Coronavirus-Covid-19/" target="_blank")
+              span Coronavirus Covid 19 Template
+          div(class="portfolio-box-image")
+            img(src="../content/assets/images/coronavirus.jpg" alt="Coronavirus Covid 19 Template Image")
+        div(class="portfolio-box")
+          div(class="portfolio-box-text")
+            a(href="https://minakaram1.github.io/Maxon-Responsive-Template/" target="_blank")
+              span Maxon Template
+          div(class="portfolio-box-image")
+            img(src="../content/assets/images/maxon.jpg" alt="Maxon Template Image")
+  // Finish Designing The Portfolio Title Section

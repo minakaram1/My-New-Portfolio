@@ -1,0 +1,38 @@
+extends ar-index.pug
+block changeTitle
+    - selected = "Contact"
+block body
+  include ../components/ar-pageTitle.pug
+  // Start Designing The Contact Information Section
+  section(class="contact-info")
+    div(class="container")
+      div(class="contact-boxs")
+        div(class="contact-left-box")
+          div(class="contact-left-box-text")
+            h3 لا تخجل!
+            p لا تتردد في الحصول على اتصال معي. أنا منفتح دائمًا لمناقشة المشاريع الجديدة والأفكار الإبداعية أو الفرص لأكون جزءًا من رؤيتك.
+          div(class="contact-left-box-icons")
+            div(class="contact-left-box-icon")
+              div(class="contact-left-box-icon-icon")
+                i(class="fas fa-envelope-open")
+              div(class="contact-left-box-icon-text")
+                h4 minakaram13@gmail.com
+            div(class="contact-left-box-icon")
+              div(class="contact-left-box-icon-icon")
+                i(class="fas fa-phone-square-alt")
+              div(class="contact-left-box-icon-text")
+                h4 01201291138
+        div(class="contact-right-box")
+          div(class="contact-right-box-form")
+            form(action="#")
+              input(type="text" dir="auto" placeholder="اسمك")
+              input(type="text" dir="auto" placeholder="بريدك")
+              input(type="text" dir="auto" placeholder="موضوعك")
+              textarea(dir="auto" placeholder="رسالتك")
+              button(class="button")
+                span ارسال الرسالة
+                i(class="fas fa-paper-plane")
+          div(class="contact-right-box-message")
+            i(class="fas fa-check-square")
+            span تم ارسال الرساله !
+  // Finish Designing The Contact Information Section
