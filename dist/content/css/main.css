@@ -463,7 +463,7 @@ header .color-setting {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  top: 42%;
+  top: 47%;
   left: -244px;
   z-index: 999;
   -webkit-transition: 0.5s ease-in-out;
