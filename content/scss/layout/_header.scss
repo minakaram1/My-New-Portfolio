@@ -1,0 +1,467 @@
+// Start Styling The Website Header
+header {
+  position: relative;
+
+  .top-bar {
+    nav {
+      ul {
+        position: fixed;
+        left: -100%;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 10px;
+        padding-top: 60px;
+        width: 100%;
+        height: 100vh;
+        transition: 0.5s ease-in-out;
+        background-color: $white-smoke-color;
+
+        &.show-nav {
+          left: 0;
+
+          @media (min-width: 992px) {
+            left: auto;
+          }
+        }
+
+        li {
+          text-align: center;
+          margin: 0 10px;
+          cursor: pointer;
+          border-bottom: 1px solid $gainsboro-color;
+
+          &:first-of-type {
+            a {
+              @media (min-width: 992px) {
+                padding: 0 13.750px 0 15px;
+              }
+            }
+          }
+
+          &:nth-of-type(2) {
+            a {
+              @media (min-width: 992px) {
+                padding: 0 16.250px 0 15px;
+              }
+            }
+          }
+
+          &:not(:last-of-type) {
+            @media (min-width: 992px) {
+              margin-bottom: 20px;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            padding: 17px 0;
+            width: 100%;
+            color: $dim-grey-color;
+
+            &.active {
+              font-weight: 700;
+              color: var(--main-color);
+
+              @media (min-width: 992px) {
+                font-weight: 400;
+                background-color: var(--main-color);
+              }
+            }
+
+            &:hover {
+              @media (min-width: 992px) {
+                overflow: visible;
+                width: fit-content;
+                background-color: var(--main-color);
+              }
+
+              span {
+                @media (min-width: 992px) {
+                  opacity: 1;
+                  position: static;
+                  margin-right: 10px;
+                  transition: 0.3s ease-in-out;
+                }
+              }
+
+              @media (min-width: 992px) {
+                width: fit-content;
+                border-radius: 30px;
+              }
+            }
+
+            span {
+              margin: 0 20px;
+              text-transform: uppercase;
+              order: 2;
+
+              @media (min-width: 992px) {
+                text-transform: uppercase;
+                position: absolute;
+                order: 1;
+                font-size: 15px;
+                margin: 0;
+                opacity: 0;
+                color: $white-color;
+              }
+            }
+
+            svg {
+              @media (min-width: 992px) {
+                order: 2;
+                color: $white-color;
+              }
+            }
+
+            @media (min-width: 992px) {
+              position: relative;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              font-size: 20px;
+              padding: 0 15px;
+              transition: 0.3s ease-in-out;
+              color: $white-color;
+              background-color: $white-smoke-color;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+            }
+          }
+
+          @media (min-width: 992px) {
+            border-bottom: none;
+            color: $dim-grey-color;
+          }
+        }
+
+        @media (min-width: 992px) {
+          position: fixed;
+          left: auto;
+          right: 2%;
+          top: 28%;
+          z-index: 999;
+          padding-left: 0;
+          padding-top: 0;
+          width: fit-content;
+          height: fit-content;
+          align-items: flex-end;
+          background: none;
+          transition: none;
+        }
+      }
+    }
+
+    .mobile-btn {
+      position: fixed;
+      padding: 8px;
+      right: 5%;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      z-index: 9999;
+      background-color: $white-smoke-color;
+
+      .line {
+        height: 4px;
+        width: 35px;
+        margin: 5px 0;
+        border-radius: 12px;
+        transition: 0.35s ease-in-out;
+        background-color: $dim-grey-color;
+      }
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    .close-sign {
+      padding-top: 20px;
+
+      .line {
+        margin: 0 0 -3px 0;
+
+        &:first-of-type {
+          transform: rotate(45deg);
+        }
+
+        &:nth-of-type(2) {
+          transform: rotate(-45deg);
+        }
+
+        &:last-of-type {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .color-setting {
+    display: flex;
+    position: fixed;
+    top: 300px;
+    left: -243px;
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+
+    &.show-color-setting {
+      left: 0;
+    }
+
+    .color-setting-content {
+      padding: 20px;
+      border-radius: 5px;
+
+      .color-setting-text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 16px;
+          border-bottom: 1px solid $very-light-grey-color;
+          color: $night-rider-color;
+        }
+
+        svg {
+          font-size: 20px;
+          font-weight: 400;
+          cursor: pointer;
+          color: $nobel-color;
+          display: none;
+
+          @media (min-width: 992px) {
+            display: block;
+          }
+        }
+      }
+
+      .color-setting-colors {
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+
+        .color-setting-color {
+          opacity: 0.2;
+          width: 30px;
+          height: 30px;
+          margin: 5px;
+          border-radius: 50%;
+          cursor: pointer;
+
+          &:first-of-type {
+            background-color: $main-color;
+          }
+
+          &:nth-of-type(2) {
+            background-color: $pomegranate-color;
+          }
+
+          &:nth-of-type(3) {
+            background-color: $purple-heart-color;
+          }
+
+          &:nth-of-type(4) {
+            background-color: $royal-blue-color;
+          }
+
+          &:nth-of-type(5) {
+            background-color: $golden-grass-color;
+          }
+
+          &:nth-of-type(6) {
+            background-color: $froly-color;
+          }
+
+          &:nth-of-type(7) {
+            background-color: $blue-violet-color;
+          }
+
+          &:nth-of-type(8) {
+            background-color: $international-orange-color;
+          }
+
+          &:nth-of-type(9) {
+            background-color: $atlantis-color;
+          }
+
+          &:last-of-type {
+            background-color: $selective-yellow-color;
+          }
+
+          &.active,
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .color-setting-dark-text {
+        margin: 15px 0;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 16px;
+          border-bottom: 1px solid $very-light-grey-color;
+          color: $night-rider-color;
+          width: fit-content;
+        }
+      }
+
+      .color-setting-dark-colors {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .color-setting-dark-color {
+          a {
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: $white-color;
+            color: var(--main-color);
+            border: 1px solid var(--main-color);
+            text-transform: capitalize;
+
+            font: {
+              size: 14px;
+              weight: 700;
+            }
+          }
+
+          &:nth-of-type(2) {
+            background-color: var(--main-color);
+            width: 50px;
+            padding: 3px 27px 2px 2px;
+            color: $white-color;
+            font-size: 20px;
+            border-radius: 30px;
+            height: fit-content;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            &.dark-mode {
+              padding: 3px 2px 2px 27px;
+            }
+          }
+
+          &:last-of-type {
+            a {
+              background-color: $black-color;
+              color: $white-color;
+              border: 1px solid $black-color;
+            }
+          }
+        }
+      }
+
+      .color-setting-language-text {
+        margin: 15px 0;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 16px;
+          border-bottom: 1px solid $very-light-grey-color;
+          color: $night-rider-color;
+          width: fit-content;
+        }
+      }
+
+      .color-setting-language-colors {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .color-setting-language-color {
+          a {
+            font: {
+              size: 14px;
+              weight: 700;
+            }
+
+            padding: 8px 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            background-color: var(--main-color);
+            color: $white-color;
+            border: 1px solid var(--main-color);
+
+            span {
+              margin-left: 10px;
+              text-transform: capitalize;
+            }
+
+            img {
+              width: 20px;
+            }
+          }
+
+          .disable-language {
+            font: {
+              size: 14px;
+              weight: 700;
+            }
+
+            padding: 8px 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            background-color: var(--main-color);
+            color: $white-color;
+            border: 1px solid var(--main-color);
+            opacity: 0.6;
+            span {
+              margin-left: 10px;
+              text-transform: capitalize;
+            }
+
+            img {
+              width: 20px;
+            }
+
+          }
+        }
+      }
+
+      @media (min-width: 992px) {
+        background-color: $white-color;
+        box-shadow: 0px 0px 4px 0px $shadow2-color;
+      }
+    }
+
+    .color-setting-icon {
+      background-color: $white-color;
+      box-shadow: 4px 0px 4px 0px $shadow2-color;
+      height: 50px;
+      width: 50px;
+      margin-top: 70px;
+      text-align: center;
+      font-size: 22px;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      display: none;
+
+      @media (min-width: 992px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    @media (min-width: 992px) {
+      top: 28%;
+    }
+  }
+}
+
+// Finish Styling The Website Header

@@ -1,0 +1,169 @@
+/* Start Global Style to Whole Website */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.page-title {
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: $white-smoke-color;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 68px;
+    letter-spacing: 10px;
+    font-weight: 900;
+    display: none;
+    color: $black-haze-color;
+
+    @media (min-width: 576px) {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 100px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 110px;
+    }
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 900;
+    padding: 15px 20px;
+    width: 100%;
+    color: $dim-grey-color;
+
+    span {
+      color: var(--main-color);
+    }
+
+    @media (min-width: 576px) {
+      font-size: 34px;
+      position: absolute;
+      top: 11px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+      top: 25px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 55px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    position: relative;
+    background: none;
+  }
+}
+
+.section-line {
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: $gainsboro-color;
+}
+
+.section-title {
+  text-align: center;
+  margin: 50px 0;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: $dim-grey-color;
+
+  @media (min-width: 992px) {
+    margin: 60px 0;
+  }
+}
+
+/* Start Style the Loading Section*/
+#loading {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999999999;
+  margin-top: 0px;
+  top: 0px;
+  background-color: $white-color;
+
+  #loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    #loading-center-absolute {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 200px;
+      width: 200px;
+      margin-top: -100px;
+      margin-left: -100px;
+
+      #object {
+        width: 80px;
+        height: 80px;
+        animation: animate 1s infinite ease-in-out;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 60px;
+        background-color: var(--main-color);
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+/* Finish Style the Loading Section*/
+// Finish Global Style For The Whole Website 

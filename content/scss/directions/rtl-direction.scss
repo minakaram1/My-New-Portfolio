@@ -1,0 +1,394 @@
+@import "../abstract/_variables.scss";
+
+// Start Global Style For The Whole Website 
+@font-face {
+  font-family: "cairo";
+  src: url('../fonts/Cairo/Cairo-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Cairo/Cairo-Regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6 - IE8 */
+    url('../fonts/Cairo/Cairo-Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/Cairo/Cairo-Regular.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../fonts/Cairo/Cairo-Regular.ttf') format('truetype'),
+    /* Safari, Android, IOS */
+    url('../fonts/Cairo/Cairo-Regular.svg#svgFontName') format('svg');
+  /* Legacy IOS */
+}
+@font-face {
+  font-family: "cairo";
+  src: url('../fonts/Cairo/Cairo-Bold.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Cairo/Cairo-Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6 - IE8 */
+    url('../fonts/Cairo/Cairo-Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/Cairo/Cairo-Bold.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../fonts/Cairo/Cairo-Bold.ttf') format('truetype'),
+    /* Safari, Android, IOS */
+    url('../fonts/Cairo/Cairo-Bold.svg#svgFontName') format('svg');
+  /* Legacy IOS */
+}
+@font-face {
+  font-family: "cairo";
+  src: url('../fonts/Cairo/Cairo-Black.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Cairo/Cairo-Black.eot?#iefix') format('embedded-opentype'),
+    /* IE6 - IE8 */
+    url('../fonts/Cairo/Cairo-Black.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/Cairo/Cairo-Black.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('../fonts/Cairo/Cairo-Black.ttf') format('truetype'),
+    /* Safari, Android, IOS */
+    url('../fonts/Cairo/Cairo-Black.svg#svgFontName') format('svg');
+  /* Legacy IOS */
+}
+
+* {
+  font-family: "cairo", sans-serif;
+}
+
+.page-title {
+  h1 {
+    letter-spacing: 0;
+    @media (min-width: 576px) {
+      font-size: 60px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 90px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 110px;
+    }
+  }
+}
+
+// Start Styling The Website Header
+header {
+  .top-bar {
+    nav {
+      ul {
+        padding-top: 30px;
+        right: -100%;
+        left: auto;
+
+        &.show-nav {
+          right: 0;
+          left: auto;
+        }
+
+        li {
+          a {
+            padding: 10px 0;
+            &:hover {
+              span {
+                @media (min-width: 992px) {
+                  margin-right: 0;
+                  margin-left: 10px;
+                }
+              }
+            }
+            @media (min-width: 992px) {
+              padding: 0 15px;
+            }
+          }
+        }
+
+        @media (min-width: 992px) {
+          right: auto;
+          left: 2%;
+        }
+      }
+    }
+
+    .mobile-btn {
+      left: 5%;
+      right: auto;
+    }
+  }
+
+  .color-setting {
+    left: auto;
+    right: -243px;
+    top: 245px;
+
+    &.show-color-setting {
+      right: 0;
+      left: auto;
+    }
+
+    .color-setting-content {
+      .color-setting-dark-colors {
+        .color-setting-dark-color {
+          a{
+            padding: 3px 8px;
+          }
+          &:nth-of-type(2) {
+            font-family: sans-serif;
+            padding: 0 2px 2px 27px;
+
+            &.dark-mode {
+              padding: 0 27px 2px 2px;
+            }
+          }
+        }
+      }
+
+      .color-setting-language-colors {
+        .color-setting-language-color {
+          order: 1;
+          a {
+            padding: 4px 5px;
+            span {
+              margin-left: 0;
+              margin-right: 10px;
+            }
+          }
+
+          &:first-of-type {
+            order: 2;
+          }
+
+          .disable-language {
+            padding: 2px 5px 6px;
+            span {
+              margin-left: 0;
+              margin-right: 10px;
+            }
+            img{
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+    }
+
+    .color-setting-icon {
+      box-shadow: -4px 0px 4px 0px $shadow2-color;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+}
+
+// Finish Styling The Website Header
+// Start Styling The Banner Section
+.banner {
+  .banner-background {
+    @media (min-width: 992px) {
+      transform: rotate(-75deg) translateY(100%);
+    }
+
+    @media (min-width: 1200px) {
+      transform: rotate(-75deg) translateY(113%);
+    }
+  }
+
+  .banner-box {
+    .banner-box-image {
+      @media (min-width: 992px) {
+        margin: 30px 30px 0 0;
+      }
+    }
+
+    .banner-box-text {
+      h2 {
+        @media (min-width: 992px) {
+          text-align: right;
+        }
+      }
+
+      p {
+        @media (min-width: 992px) {
+          padding: 0 0 0 100px;
+          text-align: right;
+        }
+      }
+
+      .banner-box-text-link {
+        a {
+          padding: 8px 15px;
+          svg {
+            margin-right: -15px;
+            margin-left: 0;
+          }
+
+          &:hover {
+            svg {
+              margin-right: 10px;
+              margin-left: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Finish Styling The Banner Section
+
+/* Start Style the About Page*/
+/* Start Style the About Information Section*/
+.about-info {
+  .about-boxs {
+    .about-left-boxs {
+      .about-left-box {
+        a {
+          position: absolute;
+          line-height: 1em;
+          &:hover {
+            svg {
+              margin-right: 10px;
+              margin-left: 0;
+            }
+          }
+
+          svg {
+            margin-right: -15px;
+            margin-left: 0;
+          }
+          @media (min-width: 992px) {
+            bottom: 110px;
+          }
+          @media (min-width: 1200px) {
+            bottom: 140px;
+          }
+        }
+      }
+    }
+
+    .about-right-boxs {
+
+      .about-right-box {
+        .about-right-box-texts {
+          .about-right-box-text {
+            &:first-of-type {
+              margin-right: 0;
+              margin-left: 20px
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Finish Style the About Information Section*/
+
+/* Start Style the Skills Section*/
+.skills {
+  .skills-boxs {
+    .skills-box {
+      .circlechart {
+        .circle-chart__percent{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+      .skills-box-description {
+        span {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+  }
+}
+
+/* Finish Style the Skills Section*/
+
+/* Start Style the Experience and Education Section*/
+.experience-and-education {
+  .experience-and-education-boxs {
+    .experience-and-education-boxs-boxs {
+      .experience-and-education-boxs-box {
+        .experience-and-education-boxs-box-icon {
+          &::after {
+            right: 20px;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Finish Style the Experience and Education Section*/
+/* Finish Style the About Page*/
+
+/* Start Style the Contact Page*/
+/* Start Style the Contact Information Section*/
+.contact-info {
+  .contact-boxs {
+    .contact-left-box {
+      .contact-left-box-icons {
+        .contact-left-box-icon {
+          .contact-left-box-icon-icon {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 15px;
+            margin-right: 0;
+          }
+          .contact-left-box-icon-text{
+            h4{
+              font-family: Arial, Helvetica, sans-serif;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-right-box {
+      form {
+        input {
+          padding: 8px 15px;
+          &::placeholder {
+            text-align: right;
+          }
+
+          &:last-of-type {
+            margin: 0;
+          }
+
+          @media (min-width: 768px) {
+            margin: 0 0 0 5%;
+          }
+
+          @media (min-width: 992px) {
+            margin: 0 0 0 2%;
+          }
+        }
+
+        textarea {
+          padding: 8px 15px;
+          &::placeholder {
+            text-align: right;
+          }
+        }
+
+        button {
+          padding: 8px 30px;
+          &:hover {
+            svg {
+              margin-right: 10px;
+              margin-left: 0;
+            }
+          }
+
+          svg {
+            margin-left: 0;
+            margin-right: -15px;
+          }
+        }
+      }
+      .contact-right-box-message {
+        padding: 8px 15px;
+      }
+    }
+
+  }
+}
+
+/* Finish Style the Contact Information Section*/
+
+/* Finish Style the Contact Page*/

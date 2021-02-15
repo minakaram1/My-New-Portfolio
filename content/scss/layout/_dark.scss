@@ -1,0 +1,313 @@
+body {
+  &.dark-mode {
+    background-color: $black-color;
+
+    .page-title {
+      background-color: $black2-color;
+
+      h1 {
+        color: $header-color;
+      }
+
+      h2 {
+        color: $white-color;
+
+        span {
+          color: var(--main-color);
+        }
+      }
+
+      @media (min-width: 576px) {
+        background: none;
+      }
+    }
+
+    .section-line {
+      background-color: $black2-color;
+    }
+
+    .section-title {
+      color: $white-color;
+    }
+
+    #loading {
+      background-color: $black2-color;
+    }
+
+    header {
+      .top-bar {
+        nav {
+          ul {
+            background-color: $black2-color;
+
+            li {
+              border-bottom: 1px solid $black3-color;
+
+              a {
+                color: $white-color;
+
+                &.active {
+                  color: var(--main-color);
+
+                  @media (min-width: 992px) {
+                    background-color: var(--main-color);
+                  }
+                }
+
+                &:hover {
+                  @media (min-width: 992px) {
+                    background-color: var(--main-color);
+                  }
+                }
+
+                @media (min-width: 992px) {
+                  background-color: $black2-color;
+                }
+              }
+
+              @media (min-width: 992px) {
+                border: none;
+              }
+            }
+
+            @media (min-width: 992px) {
+              background: none;
+            }
+          }
+        }
+
+        .mobile-btn {
+          background-color: $black2-color;
+
+          .line {
+            background-color: $white-color;
+          }
+        }
+
+      }
+
+      .color-setting {
+        .color-setting-content {
+          .color-setting-text {
+
+            h3 {
+              color: $white-color;
+            }
+
+            svg {
+              color: $white-color;
+
+              @media (min-width: 992px) {}
+            }
+          }
+
+          .color-setting-dark-text {
+            h3 {
+              color: $white-color;
+            }
+          }
+
+          .color-setting-language-text {
+            h3 {
+              color: $white-color;
+            }
+          }
+
+          .color-setting-dark-colors {
+            .color-setting-dark-color {
+              &:nth-of-type(2) {
+                background-color: $black-color;
+              }
+            }
+          }
+
+          @media (min-width: 992px) {
+            background-color: $black2-color;
+          }
+        }
+
+        .color-setting-icon {
+
+          @media (min-width: 992px) {
+            background-color: $black2-color;
+            color: $white-color;
+          }
+        }
+      }
+    }
+
+
+    .banner {
+      .banner-box {
+        .banner-box-image {
+          img {
+            @media (min-width: 576px) {
+              border: 4px solid $black2-color;
+            }
+
+            @media (min-width: 992px) {
+              border: none;
+            }
+          }
+        }
+
+        .banner-box-text {
+          span {
+            color: $white-color;
+          }
+
+          h2 {
+            color: $white-color;
+
+            span {
+              color: var(--main-color);
+            }
+          }
+
+          p {
+            color: $white-color;
+          }
+        }
+      }
+    }
+
+    .about-info {
+      .about-boxs {
+        .about-boxs-image {
+          .about-boxs-image-text {
+            h3 {
+              color: $white-color;
+            }
+          }
+        }
+
+        .about-left-boxs {
+          .about-left-box {
+            p {
+              color: $white2-color;
+
+              span {
+                color: $white-color;
+              }
+            }
+          }
+        }
+
+        .about-right-boxs {
+          .about-right-box {
+            .about-right-box-texts {
+              .about-right-box-text {
+                &:last-of-type {
+                  color: $white-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .skills {
+      .skills-boxs {
+        .skills-box {
+          .circle-chart__background {
+            stroke: $black2-color;
+          }
+
+          .circle-chart__percent {
+            fill: $white-color
+          }
+
+          .skills-box-description {
+            span {
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+
+    .experience-and-education {
+      .experience-and-education-boxs {
+        .experience-and-education-boxs-boxs {
+          .experience-and-education-boxs-box {
+            .experience-and-education-boxs-box-icon {
+              &::after {
+                background-color: $night-rider-color;
+              }
+            }
+
+            .experience-and-education-boxs-box-text {
+              .experience-and-education-boxs-box-text-year {
+                background-color: $black2-color;
+                color: $white2-color;
+              }
+
+              h4 {
+                color: $white-color;
+
+                span {
+                  color: $white2-color;
+                }
+              }
+
+              p {
+                color: $white-smoke-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-info {
+      .contact-boxs {
+        .contact-left-box {
+          .contact-left-box-text {
+            h3 {
+              color: $white-color;
+            }
+
+            p {
+              color: $white-color;
+            }
+          }
+
+          .contact-left-box-icons {
+            .contact-left-box-icon {
+              .contact-left-box-icon-text {
+                h4 {
+                  color: $white-color;
+                }
+              }
+            }
+          }
+        }
+
+        .contact-right-box {
+          form {
+            input {
+              background-color: $black2-color;
+              border: 1px solid $black-color;
+              color: $white-color;
+
+              &:focus {
+                border: 1px solid var(--main-color);
+              }
+            }
+
+            textarea {
+              background-color: $black2-color;
+              border: 1px solid $black-color;
+              color: $white-color;
+
+              &:focus {
+                border: 1px solid var(--main-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

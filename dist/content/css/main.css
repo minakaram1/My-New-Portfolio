@@ -54,7 +54,7 @@
 .page-title h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 110px;
+  font-size: 68px;
   letter-spacing: 10px;
   font-weight: 900;
   display: none;
@@ -64,7 +64,6 @@
 @media (min-width: 576px) {
   .page-title h1 {
     display: block;
-    font-size: 68px;
   }
 }
 
@@ -248,7 +247,6 @@ header .top-bar nav ul.show-nav {
 }
 
 header .top-bar nav ul li {
-  padding: 17px 0;
   text-align: center;
   margin: 0 10px;
   cursor: pointer;
@@ -279,6 +277,10 @@ header .top-bar nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 0;
   width: 100%;
   color: #666;
 }
@@ -379,7 +381,6 @@ header .top-bar nav ul li a span {
 
 @media (min-width: 992px) {
   header .top-bar nav ul li {
-    padding: 0;
     border-bottom: none;
     color: #666;
   }
@@ -464,7 +465,7 @@ header .color-setting {
   display: flex;
   position: fixed;
   top: 300px;
-  left: -244px;
+  left: -243px;
   z-index: 999;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -573,7 +574,7 @@ header .color-setting .color-setting-content .color-setting-colors .color-settin
 }
 
 header .color-setting .color-setting-content .color-setting-dark-text {
-  margin: 15px 0 20px;
+  margin: 15px 0;
 }
 
 header .color-setting .color-setting-content .color-setting-dark-text h3 {
@@ -637,7 +638,7 @@ header .color-setting .color-setting-content .color-setting-dark-colors .color-s
 }
 
 header .color-setting .color-setting-content .color-setting-language-text {
-  margin: 15px 0 20px;
+  margin: 15px 0;
 }
 
 header .color-setting .color-setting-content .color-setting-language-text h3 {
@@ -671,6 +672,9 @@ header .color-setting .color-setting-content .color-setting-language-colors .col
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--main-color);
   color: #fff;
   border: 1px solid var(--main-color);
@@ -693,6 +697,9 @@ header .color-setting .color-setting-content .color-setting-language-colors .col
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--main-color);
   color: #fff;
   border: 1px solid var(--main-color);
@@ -724,7 +731,6 @@ header .color-setting .color-setting-icon {
   width: 50px;
   margin-top: 70px;
   text-align: center;
-  padding-top: 13px;
   font-size: 22px;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
@@ -733,7 +739,15 @@ header .color-setting .color-setting-icon {
 
 @media (min-width: 992px) {
   header .color-setting .color-setting-icon {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -788,7 +802,7 @@ header .color-setting .color-setting-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .banner .banner-box .banner-box-image {
@@ -1745,7 +1759,7 @@ header .color-setting .color-setting-icon {
 .contact-info .contact-boxs .contact-right-box form textarea {
   display: block;
   margin: 20px 0;
-  width: 95%;
+  width: 97%;
   height: 160px;
   padding: 20px;
   font-size: 16px;
@@ -1788,9 +1802,15 @@ header .color-setting .color-setting-icon {
   color: #666;
 }
 
+@media (min-width: 768px) {
+  .contact-info .contact-boxs .contact-right-box form textarea {
+    width: 96%;
+  }
+}
+
 .contact-info .contact-boxs .contact-right-box form button {
   padding: 15px 30px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
