@@ -1675,6 +1675,15 @@ header .color-setting .color-setting-icon {
   color: #666;
 }
 
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icons .contact-left-box-icon .contact-left-box-icon-text a,
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icons .contact-left-box-icon .contact-left-box-icon-text a:hover,
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icons .contact-left-box-icon .contact-left-box-icon-text a:link,
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icons .contact-left-box-icon .contact-left-box-icon-text a:visited,
+.contact-info .contact-boxs .contact-left-box .contact-left-box-icons .contact-left-box-icon .contact-left-box-icon-text a:active{
+  color: #666;
+  text-decoration: none;
+}
+
 .contact-info .contact-boxs .contact-left-box .contact-left-box-icons .contact-left-box-icon .contact-left-box-icon-text span {
   text-transform: uppercase;
 }
