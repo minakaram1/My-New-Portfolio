@@ -101,12 +101,12 @@
           </div>
           <div class="contact-right-box">
             <div class="contact-right-box-form">
-              <form action="#">
-                <input type="text" dir="auto" placeholder="your name">
-                <input type="text" dir="auto" placeholder="your mail">
-                <input type="text" dir="auto" placeholder="your subject">
-                <textarea dir="auto" placeholder="your message"></textarea>
-                <button class="button"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+              <form action="contact.php" method="post">
+                <input type="text" id="name" name="name" dir="auto" placeholder="your name" required>
+                <input type="email" id="email" name="email" dir="auto" placeholder="your mail" required>
+                <input type="text" id="subject" name="subject" dir="auto" placeholder="your subject" required>
+                <textarea dir="auto" id="message" name="message" placeholder="your message" required></textarea>
+                <button class="button" type="submit"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
               </form>
             </div>
             <div class="contact-right-box-message"><i class="fas fa-check-square"></i><span>Message Sent!</span></div>
