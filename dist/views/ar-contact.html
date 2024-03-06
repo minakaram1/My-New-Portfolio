@@ -102,12 +102,12 @@
           </div>
           <div class="contact-right-box">
             <div class="contact-right-box-form">
-              <form action="#">
-                <input type="text" dir="auto" placeholder="اسمك">
-                <input type="text" dir="auto" placeholder="بريدك">
-                <input type="text" dir="auto" placeholder="موضوعك">
-                <textarea dir="auto" placeholder="رسالتك"></textarea>
-                <button class="button"><span>ارسال الرسالة</span><i class="fas fa-paper-plane"></i></button>
+              <form action="contact.php" method="post">
+                <input type="text" id="name" name="name" dir="auto" placeholder="اسمك" required>
+                <input type="email" id="email" name="email"  dir="auto" placeholder="بريدك" required>
+                <input type="text" id="subject" name="subject"  dir="auto" placeholder="موضوعك" required>
+                <textarea dir="auto" id="message" name="message"  placeholder="رسالتك" required></textarea>
+                <button class="button" type="submit"><span>ارسال الرسالة</span><i class="fas fa-paper-plane"></i></button>
               </form>
             </div>
             <div class="contact-right-box-message"><i class="fas fa-check-square"></i><span>تم ارسال الرساله !</span></div>
